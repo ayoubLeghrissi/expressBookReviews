@@ -10,5 +10,14 @@ let books = {
       9: {"author": "Honor\u00e9 de Balzac","title": "Le P\u00e8re Goriot", "reviews": {} },
       10: {"author": "Samuel Beckett","title": "Molloy, Malone Dies, The Unnamable, the trilogy", "reviews": {} }
 }
+// Add this function to get all books
+function getAllBooks() {
+    return Object.values(books);
+  }
+  
+  module.exports = {
+    books,
+    getAllBooks
+  };
 
-module.exports=books;
+
